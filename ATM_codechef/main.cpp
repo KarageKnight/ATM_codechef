@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main()
+{
+    double amt,w;
+    
+    cin>>w>>amt;
+    if(amt>=0 && amt<=2000 && w>0 && w<=2000){
+   
+    if((int)w%5==0 && w<amt && w+0.5<=amt)
+    {
+    
+            cout<<amt-w-0.50;
+        
+    
+    }
+    else
+        cout<<amt;
+    }
 }
